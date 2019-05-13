@@ -1,2 +1,30 @@
-<h1>Clicker Test</h1>
-<h2>Test</h2>
+<script>
+	var cookiecount = 0;
+</script>
+<html>
+	<head>
+		<title>Clicker Test</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1 style = "font-family:Verdana,serif;font-size:40px;">Click Tester PRO</h1>
+		<h2>
+			<p style = "font-family:Verdana,serif;font-size:20px;font-style:italic;">
+				Simply click the box below as fast as you can for 10 seconds, and you'll be given your average CPS.
+			</p>
+		</h2>
+		<br><br>
+		Clicks:
+		<input type="text" id="text" disabled style= text-align:center>
+		<br><br>
+		<a href=# onclick="add()"><button class="button" type="button" style="height:200px;width:500px">Clicker</button>></a>
+		<script>
+			function add() {
+				cookiecount = cookiecount + 1
+				document.getElementById('text').value = cookiecount;
+			}
+
+		</script>
+
+	</body>
+</html>
